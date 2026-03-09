@@ -28,10 +28,17 @@ struct CategoryGridView: View {
                     ScrollView {
                         LazyVGrid(columns: columns, spacing: 12) {
                             ForEach(viewModel.categories) { category in
-                                NavigationLink(value: category) {
-                                    CategoryTile(category: category)
+                                if viewModel.hasSubcategories(category) {
+                                    NavigationLink(value: "sub:\(category.id.uuidString)") {
+                                        CategoryTile(category: category, showChevron: true)
+                                    }
+                                    .buttonStyle(.plain)
+                                } else {
+                                    NavigationLink(value: "cat:\(category.id.uuidString)") {
+                                        CategoryTile(category: category)
+                                    }
+                                    .buttonStyle(.plain)
                                 }
-                                .buttonStyle(.plain)
                             }
                         }
                         .padding()
@@ -49,8 +56,20 @@ struct CategoryGridView: View {
                 }
             }
         }
-        .navigationDestination(for: SpendingCategory.self) { category in
-            RecommendationView(category: category)
+        .navigationDestination(for: String.self) { value in
+            if value.hasPrefix("sub:") {
+                let idStr = String(value.dropFirst(4))
+                if let uuid = UUID(uuidString: idStr),
+                   let parent = viewModel?.categories.first(where: { $0.id == uuid }) {
+                    SubcategoryView(parent: parent)
+                }
+            } else if value.hasPrefix("cat:") {
+                let idStr = String(value.dropFirst(4))
+                if let uuid = UUID(uuidString: idStr),
+                   let category = findCategory(uuid) {
+                    RecommendationView(category: category)
+                }
+            }
         }
         .onAppear {
             if viewModel == nil {
@@ -59,5 +78,11 @@ struct CategoryGridView: View {
                 viewModel?.refresh()
             }
         }
+    }
+
+    private func findCategory(_ id: UUID) -> SpendingCategory? {
+        let descriptor = FetchDescriptor<SpendingCategory>()
+        let all = (try? modelContext.fetch(descriptor)) ?? []
+        return all.first(where: { $0.id == id })
     }
 }

@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060EDD194BC7312F98D5B067 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BD537157587F1320611AD /* CategoryViewModel.swift */; };
+		0BA154685F97ACEC062C6691 /* MyCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D40D5158B040322DB07BA /* MyCardsView.swift */; };
+		1A20C125D84F747FB05909B0 /* RewardsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896E2C4BC5E6C30BE06B8D89 /* RewardsCalculator.swift */; };
+		239C4A6DE3DE70AE75B5CAE9 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E4B6ACD98027B1668DC1A /* SampleData.swift */; };
+		283C48B4CD634CC0CF01F72B /* SpendingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484986538CA6BB7DA1E3D6C0 /* SpendingCategory.swift */; };
+		357E0FE332F29B2AB93C4787 /* CardFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047341FEFAC9166FB606698E /* CardFormView.swift */; };
+		3FDE07976120C07D69159A09 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C656A0811D64B92D8E2F72 /* CategoryGridView.swift */; };
+		5D15505B41CAA75054C1ABD2 /* CardManagementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370AE63FD42554D135E9E51 /* CardManagementViewModel.swift */; };
+		6EAC524FEA90560AFABDDA63 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164C66B657993F2BAFBAC86 /* Card.swift */; };
+		7F05E8F944EB69EDF1A6B582 /* CategoryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3804EFDB57E501A0E918F /* CategoryFormView.swift */; };
+		8BCD6D36088CF840F65967D3 /* DefaultCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529D81A83FE32D0E07E8182 /* DefaultCategories.swift */; };
+		8D393565AACB2812541E5540 /* CategoryMultiplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E913E456CD48F37CA2F8E546 /* CategoryMultiplier.swift */; };
+		A0331A199C9BF379F41345FD /* SubcategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D525CE97EB4306F09F1288 /* SubcategoryView.swift */; };
+		A1556A3ECBAB5BDD96E10791 /* RecommendationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB9D3FF61A5B2A8CFC3C5 /* RecommendationViewModel.swift */; };
+		A7546155F66695D1325C3958 /* HeroCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95235B3668FEC850243A22E /* HeroCardView.swift */; };
+		B5FC14EEBD35FE4E0137955B /* CardPeckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042D6447D254A4E879B2A1E /* CardPeckerApp.swift */; };
+		CD6909C1FAE84C641FD494B6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96CEE446501009AB172BB00 /* SettingsView.swift */; };
+		D107E14891FF15E99955FED2 /* CategoryTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DE7497FF681AE619A9527 /* CategoryTile.swift */; };
+		DADC55BD7918771647B04FB7 /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81797561BEAF4A5FE888519A /* RecommendationView.swift */; };
+		EEC9D8B3373692075DF47A0D /* MyCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37EB4764A9306CDEC490740 /* MyCategoriesView.swift */; };
+		FDA6A49505B19528662DCE77 /* CardRecommendationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74025D4B1DBBDD0EDA38B1 /* CardRecommendationRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		047341FEFAC9166FB606698E /* CardFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFormView.swift; sourceTree = "<group>"; };
+		17D525CE97EB4306F09F1288 /* SubcategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoryView.swift; sourceTree = "<group>"; };
+		2042D6447D254A4E879B2A1E /* CardPeckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPeckerApp.swift; sourceTree = "<group>"; };
+		29C656A0811D64B92D8E2F72 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		352E4B6ACD98027B1668DC1A /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		4370AE63FD42554D135E9E51 /* CardManagementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManagementViewModel.swift; sourceTree = "<group>"; };
+		484986538CA6BB7DA1E3D6C0 /* SpendingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCategory.swift; sourceTree = "<group>"; };
+		5164C66B657993F2BAFBAC86 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6529D81A83FE32D0E07E8182 /* DefaultCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCategories.swift; sourceTree = "<group>"; };
+		66A3804EFDB57E501A0E918F /* CategoryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFormView.swift; sourceTree = "<group>"; };
+		677D40D5158B040322DB07BA /* MyCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsView.swift; sourceTree = "<group>"; };
+		767BD537157587F1320611AD /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		814243BAB33A5BC5F2D66B6C /* CardPecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardPecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81797561BEAF4A5FE888519A /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
+		896E2C4BC5E6C30BE06B8D89 /* RewardsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsCalculator.swift; sourceTree = "<group>"; };
+		AB6DE7497FF681AE619A9527 /* CategoryTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTile.swift; sourceTree = "<group>"; };
+		B96CEE446501009AB172BB00 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C95235B3668FEC850243A22E /* HeroCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardView.swift; sourceTree = "<group>"; };
+		CE8DB9D3FF61A5B2A8CFC3C5 /* RecommendationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewModel.swift; sourceTree = "<group>"; };
+		E913E456CD48F37CA2F8E546 /* CategoryMultiplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMultiplier.swift; sourceTree = "<group>"; };
+		F37EB4764A9306CDEC490740 /* MyCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCategoriesView.swift; sourceTree = "<group>"; };
+		FC74025D4B1DBBDD0EDA38B1 /* CardRecommendationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRecommendationRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		21C246E39C02F5E3A34F824F = {
+			isa = PBXGroup;
+			children = (
+				9A38A16E935E7A4AC09C93CD /* CardPecker */,
+				8EA586D8629AE751C2086B52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D63F44BB39848F675088E66 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				352E4B6ACD98027B1668DC1A /* SampleData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		351942376059B750488A1038 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6529D81A83FE32D0E07E8182 /* DefaultCategories.swift */,
+				896E2C4BC5E6C30BE06B8D89 /* RewardsCalculator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8EA586D8629AE751C2086B52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814243BAB33A5BC5F2D66B6C /* CardPecker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		952AE23F65431A054A298669 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4370AE63FD42554D135E9E51 /* CardManagementViewModel.swift */,
+				767BD537157587F1320611AD /* CategoryViewModel.swift */,
+				CE8DB9D3FF61A5B2A8CFC3C5 /* RecommendationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9A38A16E935E7A4AC09C93CD /* CardPecker */ = {
+			isa = PBXGroup;
+			children = (
+				BD29E63A70C74A8BC0C3D924 /* App */,
+				A21AACF8447B6321F7AD9567 /* Models */,
+				2D63F44BB39848F675088E66 /* Preview Content */,
+				351942376059B750488A1038 /* Utilities */,
+				952AE23F65431A054A298669 /* ViewModels */,
+				DA9FDE36A49A936A52CA3AA2 /* Views */,
+			);
+			path = CardPecker;
+			sourceTree = "<group>";
+		};
+		A21AACF8447B6321F7AD9567 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5164C66B657993F2BAFBAC86 /* Card.swift */,
+				E913E456CD48F37CA2F8E546 /* CategoryMultiplier.swift */,
+				484986538CA6BB7DA1E3D6C0 /* SpendingCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD824B8C744C1B4FDCB339E0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FC74025D4B1DBBDD0EDA38B1 /* CardRecommendationRow.swift */,
+				AB6DE7497FF681AE619A9527 /* CategoryTile.swift */,
+				C95235B3668FEC850243A22E /* HeroCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BD29E63A70C74A8BC0C3D924 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2042D6447D254A4E879B2A1E /* CardPeckerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DA9FDE36A49A936A52CA3AA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				047341FEFAC9166FB606698E /* CardFormView.swift */,
+				66A3804EFDB57E501A0E918F /* CategoryFormView.swift */,
+				29C656A0811D64B92D8E2F72 /* CategoryGridView.swift */,
+				677D40D5158B040322DB07BA /* MyCardsView.swift */,
+				F37EB4764A9306CDEC490740 /* MyCategoriesView.swift */,
+				81797561BEAF4A5FE888519A /* RecommendationView.swift */,
+				B96CEE446501009AB172BB00 /* SettingsView.swift */,
+				17D525CE97EB4306F09F1288 /* SubcategoryView.swift */,
+				AD824B8C744C1B4FDCB339E0 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5F3D18567200F6542D438DB /* CardPecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E905BCB3976014D8F13AF89 /* Build configuration list for PBXNativeTarget "CardPecker" */;
+			buildPhases = (
+				77B974CE67C4DB31EF81604B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardPecker;
+			packageProductDependencies = (
+			);
+			productName = CardPecker;
+			productReference = 814243BAB33A5BC5F2D66B6C /* CardPecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08400EB931DBE692C0B0C060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = CA745BDC013974895DD3F7D1 /* Build configuration list for PBXProject "CardPecker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 21C246E39C02F5E3A34F824F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8EA586D8629AE751C2086B52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5F3D18567200F6542D438DB /* CardPecker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77B974CE67C4DB31EF81604B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAC524FEA90560AFABDDA63 /* Card.swift in Sources */,
+				357E0FE332F29B2AB93C4787 /* CardFormView.swift in Sources */,
+				5D15505B41CAA75054C1ABD2 /* CardManagementViewModel.swift in Sources */,
+				B5FC14EEBD35FE4E0137955B /* CardPeckerApp.swift in Sources */,
+				FDA6A49505B19528662DCE77 /* CardRecommendationRow.swift in Sources */,
+				7F05E8F944EB69EDF1A6B582 /* CategoryFormView.swift in Sources */,
+				3FDE07976120C07D69159A09 /* CategoryGridView.swift in Sources */,
+				8D393565AACB2812541E5540 /* CategoryMultiplier.swift in Sources */,
+				D107E14891FF15E99955FED2 /* CategoryTile.swift in Sources */,
+				060EDD194BC7312F98D5B067 /* CategoryViewModel.swift in Sources */,
+				8BCD6D36088CF840F65967D3 /* DefaultCategories.swift in Sources */,
+				A7546155F66695D1325C3958 /* HeroCardView.swift in Sources */,
+				0BA154685F97ACEC062C6691 /* MyCardsView.swift in Sources */,
+				EEC9D8B3373692075DF47A0D /* MyCategoriesView.swift in Sources */,
+				DADC55BD7918771647B04FB7 /* RecommendationView.swift in Sources */,
+				A1556A3ECBAB5BDD96E10791 /* RecommendationViewModel.swift in Sources */,
+				1A20C125D84F747FB05909B0 /* RewardsCalculator.swift in Sources */,
+				239C4A6DE3DE70AE75B5CAE9 /* SampleData.swift in Sources */,
+				CD6909C1FAE84C641FD494B6 /* SettingsView.swift in Sources */,
+				283C48B4CD634CC0CF01F72B /* SpendingCategory.swift in Sources */,
+				A0331A199C9BF379F41345FD /* SubcategoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		45115FEAFE357E0683F840A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		80BCA38CA550751A90DF9973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		948A3DDD0F01078DC20B8227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4P9QFCWN5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooltravelpal.CardPecker;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAA390A47E4910DAA9380E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4P9QFCWN5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooltravelpal.CardPecker;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E905BCB3976014D8F13AF89 /* Build configuration list for PBXNativeTarget "CardPecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA390A47E4910DAA9380E0C /* Debug */,
+				948A3DDD0F01078DC20B8227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA745BDC013974895DD3F7D1 /* Build configuration list for PBXProject "CardPecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45115FEAFE357E0683F840A6 /* Debug */,
+				80BCA38CA550751A90DF9973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08400EB931DBE692C0B0C060 /* Project object */;
+}

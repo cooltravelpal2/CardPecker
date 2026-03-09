@@ -8,6 +8,7 @@ struct CardPeckerApp: App {
             NavigationStack {
                 CategoryGridView()
             }
+            .statusBarHidden(false)
         }
         .modelContainer(for: [Card.self, SpendingCategory.self, CategoryMultiplier.self])
     }

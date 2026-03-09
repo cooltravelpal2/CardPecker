@@ -14,12 +14,14 @@ final class CategoryViewModel {
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
         DefaultCategories.seedIfNeeded(context: modelContext)
+        DefaultCards.seedIfNeeded(context: modelContext)
         fetchCategories()
         fetchCardCount()
     }
 
     func fetchCategories() {
         var descriptor = FetchDescriptor<SpendingCategory>(
+            predicate: #Predicate { $0.parentCategoryId == nil },
             sortBy: [SortDescriptor(\.displayOrder)]
         )
         categories = (try? modelContext.fetch(descriptor)) ?? []
@@ -28,6 +30,19 @@ final class CategoryViewModel {
     func fetchCardCount() {
         let descriptor = FetchDescriptor<Card>()
         cardCount = (try? modelContext.fetchCount(descriptor)) ?? 0
+    }
+
+    func subcategories(for parent: SpendingCategory) -> [SpendingCategory] {
+        let parentId = parent.id
+        var descriptor = FetchDescriptor<SpendingCategory>(
+            predicate: #Predicate { $0.parentCategoryId == parentId },
+            sortBy: [SortDescriptor(\.displayOrder)]
+        )
+        return (try? modelContext.fetch(descriptor)) ?? []
+    }
+
+    func hasSubcategories(_ category: SpendingCategory) -> Bool {
+        !subcategories(for: category).isEmpty
     }
 
     func refresh() {
