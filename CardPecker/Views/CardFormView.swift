@@ -14,11 +14,17 @@ struct CardFormView: View {
     @State private var selectedColor: Color = .blue
     @State private var useCustomColor: Bool = false
     @State private var multipliers: [UUID: String] = [:]
+    @FocusState private var focusedCategoryId: UUID?
 
     @Query(sort: \SpendingCategory.displayOrder) private var allCategories: [SpendingCategory]
 
-    private var categories: [SpendingCategory] {
+    private var topLevelCategories: [SpendingCategory] {
         allCategories.filter { $0.parentCategoryId == nil }
+    }
+
+    private func subcategories(of parent: SpendingCategory) -> [SpendingCategory] {
+        let parentId = parent.id
+        return allCategories.filter { $0.parentCategoryId == parentId }
     }
 
     private var isEditing: Bool { card != nil }
@@ -42,20 +48,12 @@ struct CardFormView: View {
                 }
             }
 
-            Section("Category Multipliers") {
-                ForEach(categories) { category in
-                    HStack {
-                        Label(category.name, systemImage: category.icon)
-                        Spacer()
-                        TextField("1.0", text: multiplierBinding(for: category.id))
-                            .keyboardType(.decimalPad)
-                            .multilineTextAlignment(.trailing)
-                            .frame(width: 60)
-                            .onTapGesture {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                                    UIApplication.shared.sendAction(#selector(UIResponder.selectAll(_:)), to: nil, from: nil, for: nil)
-                                }
-                            }
+            ForEach(topLevelCategories) { category in
+                let subs = subcategories(of: category)
+                Section(category.name) {
+                    multiplierRow(for: category)
+                    ForEach(subs) { sub in
+                        multiplierRow(for: sub)
                     }
                 }
             }
@@ -72,6 +70,26 @@ struct CardFormView: View {
             }
         }
         .onAppear { loadCardData() }
+    }
+
+    @ViewBuilder
+    private func multiplierRow(for category: SpendingCategory) -> some View {
+        HStack {
+            Label(category.name, systemImage: category.icon)
+            Spacer()
+            TextField("1.0", text: multiplierBinding(for: category.id))
+                .keyboardType(.decimalPad)
+                .multilineTextAlignment(.trailing)
+                .frame(width: 60)
+                .focused($focusedCategoryId, equals: category.id)
+                .onChange(of: focusedCategoryId) { _, newValue in
+                    if newValue == category.id {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+                            UIApplication.shared.sendAction(#selector(UIResponder.selectAll(_:)), to: nil, from: nil, for: nil)
+                        }
+                    }
+                }
+        }
     }
 
     private func multiplierBinding(for categoryId: UUID) -> Binding<String> {
