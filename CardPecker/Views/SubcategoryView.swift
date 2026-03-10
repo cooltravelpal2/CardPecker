@@ -23,15 +23,6 @@ struct SubcategoryView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 12) {
-                // Show parent as "All [Parent]" option
-                NavigationLink {
-                    RecommendationView(category: parent)
-                } label: {
-                    CategoryTile(category: parent)
-                }
-                .buttonStyle(.plain)
-
-                // Show subcategories
                 ForEach(subcategories) { sub in
                     NavigationLink {
                         RecommendationView(category: sub)

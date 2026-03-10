@@ -15,7 +15,11 @@ struct CardFormView: View {
     @State private var useCustomColor: Bool = false
     @State private var multipliers: [UUID: String] = [:]
 
-    @Query(sort: \SpendingCategory.displayOrder) private var categories: [SpendingCategory]
+    @Query(sort: \SpendingCategory.displayOrder) private var allCategories: [SpendingCategory]
+
+    private var categories: [SpendingCategory] {
+        allCategories.filter { $0.parentCategoryId == nil }
+    }
 
     private var isEditing: Bool { card != nil }
 
@@ -47,6 +51,11 @@ struct CardFormView: View {
                             .keyboardType(.decimalPad)
                             .multilineTextAlignment(.trailing)
                             .frame(width: 60)
+                            .onTapGesture {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                    UIApplication.shared.sendAction(#selector(UIResponder.selectAll(_:)), to: nil, from: nil, for: nil)
+                                }
+                            }
                     }
                 }
             }
