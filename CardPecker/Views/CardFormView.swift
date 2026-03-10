@@ -48,12 +48,22 @@ struct CardFormView: View {
                 }
             }
 
+            Section("Category Multipliers") {
+                ForEach(topLevelCategories) { category in
+                    let subs = subcategories(of: category)
+                    if subs.isEmpty {
+                        multiplierRow(for: category)
+                    }
+                }
+            }
+
             ForEach(topLevelCategories) { category in
                 let subs = subcategories(of: category)
-                Section(category.name) {
-                    multiplierRow(for: category)
-                    ForEach(subs) { sub in
-                        multiplierRow(for: sub)
+                if !subs.isEmpty {
+                    Section(category.name) {
+                        ForEach(subs) { sub in
+                            multiplierRow(for: sub)
+                        }
                     }
                 }
             }
