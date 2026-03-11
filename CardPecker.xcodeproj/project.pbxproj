@@ -16,6 +16,7 @@
 		3FDE07976120C07D69159A09 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C656A0811D64B92D8E2F72 /* CategoryGridView.swift */; };
 		5D15505B41CAA75054C1ABD2 /* CardManagementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370AE63FD42554D135E9E51 /* CardManagementViewModel.swift */; };
 		6EAC524FEA90560AFABDDA63 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164C66B657993F2BAFBAC86 /* Card.swift */; };
+		719D8F910E217B6885030FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7475762C4B686A4E9BFBD29F /* Assets.xcassets */; };
 		7F05E8F944EB69EDF1A6B582 /* CategoryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3804EFDB57E501A0E918F /* CategoryFormView.swift */; };
 		8BCD6D36088CF840F65967D3 /* DefaultCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529D81A83FE32D0E07E8182 /* DefaultCategories.swift */; };
 		8D393565AACB2812541E5540 /* CategoryMultiplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E913E456CD48F37CA2F8E546 /* CategoryMultiplier.swift */; };
@@ -23,9 +24,12 @@
 		A1556A3ECBAB5BDD96E10791 /* RecommendationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DB9D3FF61A5B2A8CFC3C5 /* RecommendationViewModel.swift */; };
 		A7546155F66695D1325C3958 /* HeroCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95235B3668FEC850243A22E /* HeroCardView.swift */; };
 		B5FC14EEBD35FE4E0137955B /* CardPeckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042D6447D254A4E879B2A1E /* CardPeckerApp.swift */; };
+		BD32F3E478CEA6E51AA83430 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D918521DC6DB50511BD74303 /* LocalizationManager.swift */; };
 		CD6909C1FAE84C641FD494B6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96CEE446501009AB172BB00 /* SettingsView.swift */; };
 		D107E14891FF15E99955FED2 /* CategoryTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DE7497FF681AE619A9527 /* CategoryTile.swift */; };
 		DADC55BD7918771647B04FB7 /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81797561BEAF4A5FE888519A /* RecommendationView.swift */; };
+		E15E4DA97A4DD7DAA48523FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 542185C65606576D05720DCC /* Localizable.strings */; };
+		E4A69D05C3CFA406C4B2B0B5 /* CouponBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F02C2379A3A1C9874BD39 /* CouponBookView.swift */; };
 		EEC9D8B3373692075DF47A0D /* MyCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37EB4764A9306CDEC490740 /* MyCategoriesView.swift */; };
 		FDA6A49505B19528662DCE77 /* CardRecommendationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74025D4B1DBBDD0EDA38B1 /* CardRecommendationRow.swift */; };
 /* End PBXBuildFile section */
@@ -36,22 +40,27 @@
 		2042D6447D254A4E879B2A1E /* CardPeckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPeckerApp.swift; sourceTree = "<group>"; };
 		29C656A0811D64B92D8E2F72 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		352E4B6ACD98027B1668DC1A /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		3F15ED8B3ABEBC8F184EE241 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4370AE63FD42554D135E9E51 /* CardManagementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManagementViewModel.swift; sourceTree = "<group>"; };
 		484986538CA6BB7DA1E3D6C0 /* SpendingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCategory.swift; sourceTree = "<group>"; };
 		5164C66B657993F2BAFBAC86 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		6529D81A83FE32D0E07E8182 /* DefaultCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCategories.swift; sourceTree = "<group>"; };
 		66A3804EFDB57E501A0E918F /* CategoryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFormView.swift; sourceTree = "<group>"; };
 		677D40D5158B040322DB07BA /* MyCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsView.swift; sourceTree = "<group>"; };
+		724F02C2379A3A1C9874BD39 /* CouponBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponBookView.swift; sourceTree = "<group>"; };
+		7475762C4B686A4E9BFBD29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767BD537157587F1320611AD /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
-		814243BAB33A5BC5F2D66B6C /* CardPecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardPecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		814243BAB33A5BC5F2D66B6C /* CardPecker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CardPecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81797561BEAF4A5FE888519A /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
 		896E2C4BC5E6C30BE06B8D89 /* RewardsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsCalculator.swift; sourceTree = "<group>"; };
 		AB6DE7497FF681AE619A9527 /* CategoryTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTile.swift; sourceTree = "<group>"; };
 		B96CEE446501009AB172BB00 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C95235B3668FEC850243A22E /* HeroCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardView.swift; sourceTree = "<group>"; };
 		CE8DB9D3FF61A5B2A8CFC3C5 /* RecommendationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewModel.swift; sourceTree = "<group>"; };
+		D918521DC6DB50511BD74303 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		E913E456CD48F37CA2F8E546 /* CategoryMultiplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMultiplier.swift; sourceTree = "<group>"; };
 		F37EB4764A9306CDEC490740 /* MyCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCategoriesView.swift; sourceTree = "<group>"; };
+		FA8278D8E76BBB8B313F4828 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FC74025D4B1DBBDD0EDA38B1 /* CardRecommendationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRecommendationRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				6529D81A83FE32D0E07E8182 /* DefaultCategories.swift */,
+				D918521DC6DB50511BD74303 /* LocalizationManager.swift */,
 				896E2C4BC5E6C30BE06B8D89 /* RewardsCalculator.swift */,
 			);
 			path = Utilities;
@@ -105,6 +115,7 @@
 				BD29E63A70C74A8BC0C3D924 /* App */,
 				A21AACF8447B6321F7AD9567 /* Models */,
 				2D63F44BB39848F675088E66 /* Preview Content */,
+				D86391447CB0A7BE9C7128B7 /* Resources */,
 				351942376059B750488A1038 /* Utilities */,
 				952AE23F65431A054A298669 /* ViewModels */,
 				DA9FDE36A49A936A52CA3AA2 /* Views */,
@@ -140,12 +151,22 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		D86391447CB0A7BE9C7128B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7475762C4B686A4E9BFBD29F /* Assets.xcassets */,
+				542185C65606576D05720DCC /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DA9FDE36A49A936A52CA3AA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				047341FEFAC9166FB606698E /* CardFormView.swift */,
 				66A3804EFDB57E501A0E918F /* CategoryFormView.swift */,
 				29C656A0811D64B92D8E2F72 /* CategoryGridView.swift */,
+				724F02C2379A3A1C9874BD39 /* CouponBookView.swift */,
 				677D40D5158B040322DB07BA /* MyCardsView.swift */,
 				F37EB4764A9306CDEC490740 /* MyCategoriesView.swift */,
 				81797561BEAF4A5FE888519A /* RecommendationView.swift */,
@@ -164,6 +185,7 @@
 			buildConfigurationList = 6E905BCB3976014D8F13AF89 /* Build configuration list for PBXNativeTarget "CardPecker" */;
 			buildPhases = (
 				77B974CE67C4DB31EF81604B /* Sources */,
+				BDE70B84FF7E7F6B5656AAFA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,7 +205,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2630;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D5F3D18567200F6542D438DB = {
+						DevelopmentTeam = "";
+					};
+				};
 			};
 			buildConfigurationList = CA745BDC013974895DD3F7D1 /* Build configuration list for PBXProject "CardPecker" */;
 			developmentRegion = en;
@@ -191,6 +218,7 @@
 			knownRegions = (
 				Base,
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 21C246E39C02F5E3A34F824F;
 			minimizedProjectReferenceProxies = 1;
@@ -203,6 +231,18 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDE70B84FF7E7F6B5656AAFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719D8F910E217B6885030FBD /* Assets.xcassets in Resources */,
+				E15E4DA97A4DD7DAA48523FC /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77B974CE67C4DB31EF81604B /* Sources */ = {
@@ -219,8 +259,10 @@
 				8D393565AACB2812541E5540 /* CategoryMultiplier.swift in Sources */,
 				D107E14891FF15E99955FED2 /* CategoryTile.swift in Sources */,
 				060EDD194BC7312F98D5B067 /* CategoryViewModel.swift in Sources */,
+				E4A69D05C3CFA406C4B2B0B5 /* CouponBookView.swift in Sources */,
 				8BCD6D36088CF840F65967D3 /* DefaultCategories.swift in Sources */,
 				A7546155F66695D1325C3958 /* HeroCardView.swift in Sources */,
+				BD32F3E478CEA6E51AA83430 /* LocalizationManager.swift in Sources */,
 				0BA154685F97ACEC062C6691 /* MyCardsView.swift in Sources */,
 				EEC9D8B3373692075DF47A0D /* MyCategoriesView.swift in Sources */,
 				DADC55BD7918771647B04FB7 /* RecommendationView.swift in Sources */,
@@ -234,6 +276,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		542185C65606576D05720DCC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA8278D8E76BBB8B313F4828 /* en */,
+				3F15ED8B3ABEBC8F184EE241 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		45115FEAFE357E0683F840A6 /* Debug */ = {
@@ -271,10 +325,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = X4P9QFCWN5;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -295,7 +347,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -337,10 +388,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = X4P9QFCWN5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -354,7 +403,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -367,11 +415,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,11 +438,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

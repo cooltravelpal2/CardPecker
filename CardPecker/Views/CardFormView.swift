@@ -36,19 +36,19 @@ struct CardFormView: View {
 
     var body: some View {
         Form {
-            Section("Card Details") {
-                TextField("Card Name", text: $name)
-                TextField("Rewards Currency (e.g., Ultimate Rewards)", text: $rewardsCurrency)
-                TextField("Point Value (cents per point)", text: $pointValueCents)
+            Section("cardForm.cardDetails".loc) {
+                TextField("cardForm.cardName".loc, text: $name)
+                TextField("cardForm.rewardsCurrency".loc, text: $rewardsCurrency)
+                TextField("cardForm.pointValue".loc, text: $pointValueCents)
                     .keyboardType(.decimalPad)
 
-                Toggle("Custom Color", isOn: $useCustomColor)
+                Toggle("cardForm.customColor".loc, isOn: $useCustomColor)
                 if useCustomColor {
-                    ColorPicker("Card Color", selection: $selectedColor)
+                    ColorPicker("cardForm.cardColor".loc, selection: $selectedColor)
                 }
             }
 
-            Section("Category Multipliers") {
+            Section("cardForm.categoryMultipliers".loc) {
                 ForEach(topLevelCategories) { category in
                     let subs = subcategories(of: category)
                     if subs.isEmpty {
@@ -68,14 +68,14 @@ struct CardFormView: View {
                 }
             }
         }
-        .navigationTitle(isEditing ? "Edit Card" : "Add Card")
+        .navigationTitle(isEditing ? "nav.editCard".loc : "nav.addCard".loc)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") { dismiss() }
+                Button("button.cancel".loc) { dismiss() }
             }
             ToolbarItem(placement: .confirmationAction) {
-                Button("Save") { save() }
+                Button("button.save".loc) { save() }
                     .disabled(!isValid)
             }
         }

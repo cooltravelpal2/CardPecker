@@ -11,9 +11,9 @@ struct RecommendationView: View {
             if let viewModel {
                 if viewModel.hasNoCards {
                     ContentUnavailableView {
-                        Label("No Cards", systemImage: "creditcard")
+                        Label("empty.noCards".loc, systemImage: "creditcard")
                     } description: {
-                        Text("Add cards in Settings to see recommendations.")
+                        Text("empty.noCardsSettings".loc)
                     }
                 } else {
                     ScrollView {
@@ -24,7 +24,7 @@ struct RecommendationView: View {
 
                             if !viewModel.otherCards.isEmpty {
                                 VStack(alignment: .leading, spacing: 8) {
-                                    Text("Other Cards")
+                                    Text("rec.otherCards".loc)
                                         .font(.headline)
                                         .foregroundStyle(.secondary)
 

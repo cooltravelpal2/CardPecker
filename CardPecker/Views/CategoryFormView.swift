@@ -26,12 +26,12 @@ struct CategoryFormView: View {
 
     var body: some View {
         Form {
-            Section("Category Details") {
-                TextField("Category Name", text: $name)
-                ColorPicker("Icon Color", selection: $iconColor)
+            Section("categoryForm.details".loc) {
+                TextField("categoryForm.name".loc, text: $name)
+                ColorPicker("categoryForm.iconColor".loc, selection: $iconColor)
             }
 
-            Section("Icon") {
+            Section("categoryForm.icon".loc) {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 44))], spacing: 12) {
                     ForEach(commonIcons, id: \.self) { iconName in
                         Button {
@@ -49,8 +49,8 @@ struct CategoryFormView: View {
                 }
 
                 HStack {
-                    Text("Custom SF Symbol:")
-                    TextField("symbol.name", text: $icon)
+                    Text("categoryForm.customSymbol".loc)
+                    TextField("categoryForm.symbolPlaceholder".loc, text: $icon)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
                 }
@@ -58,21 +58,21 @@ struct CategoryFormView: View {
 
             Section {
                 HStack {
-                    Text("Preview:")
+                    Text("categoryForm.preview".loc)
                     Image(systemName: icon)
                         .foregroundStyle(iconColor)
-                    Text(name.isEmpty ? "Category" : name)
+                    Text(name.isEmpty ? "categoryForm.defaultPreview".loc : name)
                 }
             }
         }
-        .navigationTitle(isEditing ? "Edit Category" : "Add Category")
+        .navigationTitle(isEditing ? "nav.editCategory".loc : "nav.addCategory".loc)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") { dismiss() }
+                Button("button.cancel".loc) { dismiss() }
             }
             ToolbarItem(placement: .confirmationAction) {
-                Button("Save") { save() }
+                Button("button.save".loc) { save() }
                     .disabled(!isValid)
             }
         }

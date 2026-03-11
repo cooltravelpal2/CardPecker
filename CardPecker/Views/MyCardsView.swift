@@ -12,9 +12,9 @@ struct MyCardsView: View {
             if let viewModel {
                 if viewModel.cards.isEmpty {
                     ContentUnavailableView {
-                        Label("No Cards", systemImage: "creditcard")
+                        Label("empty.noCards".loc, systemImage: "creditcard")
                     } description: {
-                        Text("Tap + to add your first credit card.")
+                        Text("empty.tapToAdd".loc)
                     }
                 } else {
                     List {
@@ -34,7 +34,7 @@ struct MyCardsView: View {
                                 Button(role: .destructive) {
                                     cardToDelete = card
                                 } label: {
-                                    Label("Delete", systemImage: "trash")
+                                    Label("button.delete".loc, systemImage: "trash")
                                 }
                             }
                         }
@@ -44,7 +44,7 @@ struct MyCardsView: View {
                 ProgressView()
             }
         }
-        .navigationTitle("My Cards")
+        .navigationTitle("nav.myCards".loc)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
@@ -60,19 +60,19 @@ struct MyCardsView: View {
             }
             .onDisappear { viewModel?.fetchCards() }
         }
-        .alert("Delete Card", isPresented: Binding(
+        .alert("alert.deleteCard".loc, isPresented: Binding(
             get: { cardToDelete != nil },
             set: { if !$0 { cardToDelete = nil } }
         )) {
-            Button("Cancel", role: .cancel) { cardToDelete = nil }
-            Button("Delete", role: .destructive) {
+            Button("button.cancel".loc, role: .cancel) { cardToDelete = nil }
+            Button("button.delete".loc, role: .destructive) {
                 if let card = cardToDelete {
                     viewModel?.deleteCard(card)
                     cardToDelete = nil
                 }
             }
         } message: {
-            Text("Are you sure you want to delete \(cardToDelete?.name ?? "this card")?")
+            Text("alert.deleteCardMessage".loc(cardToDelete?.name ?? ""))
         }
         .onAppear {
             if viewModel == nil {

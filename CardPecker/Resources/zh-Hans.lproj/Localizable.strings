@@ -1,0 +1,82 @@
+/* Tabs */
+"tab.whichCard" = "哪张卡？";
+"tab.couponBook" = "优惠券";
+
+/* Navigation Titles */
+"nav.settings" = "设置";
+"nav.myCards" = "我的卡片";
+"nav.myCategories" = "我的分类";
+"nav.addCard" = "添加卡片";
+"nav.editCard" = "编辑卡片";
+"nav.addCategory" = "添加分类";
+"nav.editCategory" = "编辑分类";
+"nav.couponBook" = "优惠券";
+
+/* Settings */
+"settings.myCards" = "我的卡片";
+"settings.myCategories" = "我的分类";
+"settings.language" = "语言";
+"settings.languageSection" = "语言";
+"language.english" = "English";
+"language.chinese" = "中文";
+
+/* Card Form */
+"cardForm.cardDetails" = "卡片信息";
+"cardForm.cardName" = "卡片名称";
+"cardForm.rewardsCurrency" = "积分类型（如：Ultimate Rewards）";
+"cardForm.pointValue" = "积分价值（每分几美分）";
+"cardForm.customColor" = "自定义颜色";
+"cardForm.cardColor" = "卡片颜色";
+"cardForm.categoryMultipliers" = "分类倍率";
+
+/* Category Form */
+"categoryForm.details" = "分类信息";
+"categoryForm.name" = "分类名称";
+"categoryForm.iconColor" = "图标颜色";
+"categoryForm.icon" = "图标";
+"categoryForm.customSymbol" = "自定义 SF Symbol：";
+"categoryForm.symbolPlaceholder" = "symbol.name";
+"categoryForm.preview" = "预览：";
+"categoryForm.defaultPreview" = "分类";
+
+/* Buttons */
+"button.cancel" = "取消";
+"button.save" = "保存";
+"button.delete" = "删除";
+"button.goToSettings" = "前往设置";
+
+/* Alerts */
+"alert.deleteCard" = "删除卡片";
+"alert.deleteCardMessage" = "确定要删除 %@ 吗？";
+"alert.deleteCategory" = "删除分类";
+"alert.deleteCategoryDefault" = ""%@"是默认分类，确定要删除吗？";
+"alert.deleteCategoryMessage" = "确定要删除"%@"吗？";
+
+/* Empty States */
+"empty.noCards" = "没有卡片";
+"empty.noCardsAdded" = "尚未添加卡片";
+"empty.noCardsDescription" = "在设置中添加信用卡以获取推荐。";
+"empty.noCardsSettings" = "在设置中添加卡片以查看推荐。";
+"empty.tapToAdd" = "点击 + 添加你的第一张信用卡。";
+
+/* Recommendations */
+"rec.bestCard" = "最佳卡片";
+"rec.otherCards" = "其他卡片";
+
+/* Coupon Book */
+"coupon.comingSoon" = "跟踪您的卡片优惠券使用情况。即将推出！";
+
+/* Default Categories */
+"category.hotel" = "酒店";
+"category.dining" = "餐饮";
+"category.grocery" = "超市";
+"category.shopping" = "购物";
+"category.airline" = "航空";
+"category.gas" = "加油";
+"category.rental" = "租车";
+"category.foreignTransactions" = "境外消费";
+"category.hyatt" = "凯悦";
+"category.marriott" = "万豪";
+"category.ihg" = "洲际";
+"category.hilton" = "希尔顿";
+"category.otherHotels" = "其他酒店";

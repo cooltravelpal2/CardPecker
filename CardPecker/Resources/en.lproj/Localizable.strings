@@ -1,0 +1,82 @@
+/* Tabs */
+"tab.whichCard" = "Which Card?";
+"tab.couponBook" = "Coupon Book";
+
+/* Navigation Titles */
+"nav.settings" = "Settings";
+"nav.myCards" = "My Cards";
+"nav.myCategories" = "My Categories";
+"nav.addCard" = "Add Card";
+"nav.editCard" = "Edit Card";
+"nav.addCategory" = "Add Category";
+"nav.editCategory" = "Edit Category";
+"nav.couponBook" = "Coupon Book";
+
+/* Settings */
+"settings.myCards" = "My Cards";
+"settings.myCategories" = "My Categories";
+"settings.language" = "Language";
+"settings.languageSection" = "Language";
+"language.english" = "English";
+"language.chinese" = "中文";
+
+/* Card Form */
+"cardForm.cardDetails" = "Card Details";
+"cardForm.cardName" = "Card Name";
+"cardForm.rewardsCurrency" = "Rewards Currency (e.g., Ultimate Rewards)";
+"cardForm.pointValue" = "Point Value (cents per point)";
+"cardForm.customColor" = "Custom Color";
+"cardForm.cardColor" = "Card Color";
+"cardForm.categoryMultipliers" = "Category Multipliers";
+
+/* Category Form */
+"categoryForm.details" = "Category Details";
+"categoryForm.name" = "Category Name";
+"categoryForm.iconColor" = "Icon Color";
+"categoryForm.icon" = "Icon";
+"categoryForm.customSymbol" = "Custom SF Symbol:";
+"categoryForm.symbolPlaceholder" = "symbol.name";
+"categoryForm.preview" = "Preview:";
+"categoryForm.defaultPreview" = "Category";
+
+/* Buttons */
+"button.cancel" = "Cancel";
+"button.save" = "Save";
+"button.delete" = "Delete";
+"button.goToSettings" = "Go to Settings";
+
+/* Alerts */
+"alert.deleteCard" = "Delete Card";
+"alert.deleteCardMessage" = "Are you sure you want to delete %@?";
+"alert.deleteCategory" = "Delete Category";
+"alert.deleteCategoryDefault" = "'%@' is a default category. Are you sure you want to delete it?";
+"alert.deleteCategoryMessage" = "Are you sure you want to delete '%@'?";
+
+/* Empty States */
+"empty.noCards" = "No Cards";
+"empty.noCardsAdded" = "No Cards Added";
+"empty.noCardsDescription" = "Add your credit cards in Settings to get recommendations.";
+"empty.noCardsSettings" = "Add cards in Settings to see recommendations.";
+"empty.tapToAdd" = "Tap + to add your first credit card.";
+
+/* Recommendations */
+"rec.bestCard" = "Best Card";
+"rec.otherCards" = "Other Cards";
+
+/* Coupon Book */
+"coupon.comingSoon" = "Track your card coupon usage. Coming soon!";
+
+/* Default Categories */
+"category.hotel" = "Hotel";
+"category.dining" = "Dining";
+"category.grocery" = "Grocery";
+"category.shopping" = "Shopping";
+"category.airline" = "Airline";
+"category.gas" = "Gas";
+"category.rental" = "Rental";
+"category.foreignTransactions" = "Foreign Transactions";
+"category.hyatt" = "Hyatt";
+"category.marriott" = "Marriott";
+"category.ihg" = "IHG";
+"category.hilton" = "Hilton";
+"category.otherHotels" = "Other Hotels";

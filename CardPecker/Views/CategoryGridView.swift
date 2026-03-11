@@ -3,6 +3,7 @@ import SwiftData
 
 struct CategoryGridView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(LocalizationManager.self) private var loc
     @State private var viewModel: CategoryViewModel?
 
     private let columns = [
@@ -16,12 +17,12 @@ struct CategoryGridView: View {
             if let viewModel {
                 if viewModel.hasNoCards {
                     ContentUnavailableView {
-                        Label("No Cards Added", systemImage: "creditcard")
+                        Label("empty.noCardsAdded".loc, systemImage: "creditcard")
                     } description: {
-                        Text("Add your credit cards in Settings to get recommendations.")
+                        Text("empty.noCardsDescription".loc)
                     } actions: {
                         NavigationLink(destination: SettingsView()) {
-                            Text("Go to Settings")
+                            Text("button.goToSettings".loc)
                         }
                     }
                 } else {
@@ -48,7 +49,6 @@ struct CategoryGridView: View {
                 ProgressView()
             }
         }
-        .navigationTitle("CardPecker")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink(destination: SettingsView()) {

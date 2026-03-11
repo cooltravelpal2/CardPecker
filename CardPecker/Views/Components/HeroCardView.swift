@@ -15,7 +15,7 @@ struct HeroCardView: View {
             HStack {
                 Image(systemName: "trophy.fill")
                     .foregroundStyle(.yellow)
-                Text("Best Card")
+                Text("rec.bestCard".loc)
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundStyle(.secondary)

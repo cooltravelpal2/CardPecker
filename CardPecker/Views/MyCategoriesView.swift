@@ -19,12 +19,12 @@ struct MyCategoriesView: View {
                     Button(role: .destructive) {
                         categoryToDelete = category
                     } label: {
-                        Label("Delete", systemImage: "trash")
+                        Label("button.delete".loc, systemImage: "trash")
                     }
                 }
             }
         }
-        .navigationTitle("My Categories")
+        .navigationTitle("nav.myCategories".loc)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
@@ -39,12 +39,12 @@ struct MyCategoriesView: View {
                 CategoryFormView(category: nil)
             }
         }
-        .alert("Delete Category", isPresented: Binding(
+        .alert("alert.deleteCategory".loc, isPresented: Binding(
             get: { categoryToDelete != nil },
             set: { if !$0 { categoryToDelete = nil } }
         )) {
-            Button("Cancel", role: .cancel) { categoryToDelete = nil }
-            Button("Delete", role: .destructive) {
+            Button("button.cancel".loc, role: .cancel) { categoryToDelete = nil }
+            Button("button.delete".loc, role: .destructive) {
                 if let category = categoryToDelete {
                     modelContext.delete(category)
                     try? modelContext.save()
@@ -53,9 +53,9 @@ struct MyCategoriesView: View {
             }
         } message: {
             if let cat = categoryToDelete, cat.isDefault {
-                Text("'\(cat.name)' is a default category. Are you sure you want to delete it?")
+                Text("alert.deleteCategoryDefault".loc(cat.name))
             } else {
-                Text("Are you sure you want to delete '\(categoryToDelete?.name ?? "")'?")
+                Text("alert.deleteCategoryMessage".loc(categoryToDelete?.name ?? ""))
             }
         }
     }

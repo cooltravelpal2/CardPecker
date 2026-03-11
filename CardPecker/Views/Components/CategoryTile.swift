@@ -9,15 +9,10 @@ struct CategoryTile: View {
     }
 
     var body: some View {
-        VStack(spacing: 8) {
-            ZStack {
-                Circle()
-                    .fill(tileColor.opacity(0.15))
-                    .frame(width: 48, height: 48)
-                Image(systemName: category.icon)
-                    .font(.title2)
-                    .foregroundStyle(tileColor)
-            }
+        VStack(spacing: 6) {
+            Image(systemName: category.icon)
+                .font(.system(size: 32))
+                .foregroundStyle(tileColor)
             HStack(spacing: 2) {
                 Text(category.name)
                     .font(.caption)
@@ -32,13 +27,11 @@ struct CategoryTile: View {
                 }
             }
         }
-        .frame(maxWidth: .infinity, minHeight: 90)
-        .padding(.vertical, 8)
-        .padding(.horizontal, 4)
+        .frame(maxWidth: .infinity, minHeight: 70)
+        .padding(8)
         .background(
             RoundedRectangle(cornerRadius: 14)
-                .fill(.background)
-                .shadow(color: tileColor.opacity(0.15), radius: 4, y: 2)
+                .fill(tileColor.opacity(0.08))
         )
         .overlay(
             RoundedRectangle(cornerRadius: 14)
