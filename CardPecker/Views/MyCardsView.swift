@@ -4,8 +4,20 @@ import SwiftData
 struct MyCardsView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var viewModel: CardManagementViewModel?
-    @State private var showingAddCard = false
+    @State private var activeSheet: ActiveSheet?
     @State private var cardToDelete: Card?
+
+    private enum ActiveSheet: Identifiable {
+        case bankPicker
+        case cardForm(CardTemplate?)
+
+        var id: String {
+            switch self {
+            case .bankPicker: return "bankPicker"
+            case .cardForm: return "cardForm"
+            }
+        }
+    }
 
     var body: some View {
         Group {
@@ -48,17 +60,31 @@ struct MyCardsView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    showingAddCard = true
+                    activeSheet = .bankPicker
                 } label: {
                     Image(systemName: "plus")
                 }
             }
         }
-        .sheet(isPresented: $showingAddCard) {
-            NavigationStack {
-                CardFormView(card: nil)
+        .sheet(item: $activeSheet) { sheet in
+            switch sheet {
+            case .bankPicker:
+                NavigationStack {
+                    BankSelectionView { template in
+                        activeSheet = nil
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                            activeSheet = .cardForm(template)
+                        }
+                    }
+                }
+            case .cardForm(let template):
+                NavigationStack {
+                    CardFormView(card: nil, template: template)
+                }
+                .onDisappear {
+                    viewModel?.fetchCards()
+                }
             }
-            .onDisappear { viewModel?.fetchCards() }
         }
         .alert("alert.deleteCard".loc, isPresented: Binding(
             get: { cardToDelete != nil },

@@ -14,7 +14,6 @@ final class CategoryViewModel {
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
         DefaultCategories.seedIfNeeded(context: modelContext)
-        DefaultCards.seedIfNeeded(context: modelContext)
         fetchCategories()
         fetchCardCount()
     }

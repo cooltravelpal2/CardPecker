@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		060EDD194BC7312F98D5B067 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BD537157587F1320611AD /* CategoryViewModel.swift */; };
 		0BA154685F97ACEC062C6691 /* MyCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D40D5158B040322DB07BA /* MyCardsView.swift */; };
+		0C676911DD3379242CCB31A9 /* BankSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D259DB4FB2871073A441EC /* BankSelectionView.swift */; };
+		0FC4F469A388561F02372370 /* CardTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1586FC162434DD5FCB504D33 /* CardTemplates.swift */; };
 		1A20C125D84F747FB05909B0 /* RewardsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896E2C4BC5E6C30BE06B8D89 /* RewardsCalculator.swift */; };
 		239C4A6DE3DE70AE75B5CAE9 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E4B6ACD98027B1668DC1A /* SampleData.swift */; };
 		283C48B4CD634CC0CF01F72B /* SpendingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484986538CA6BB7DA1E3D6C0 /* SpendingCategory.swift */; };
@@ -18,6 +20,7 @@
 		6EAC524FEA90560AFABDDA63 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164C66B657993F2BAFBAC86 /* Card.swift */; };
 		719D8F910E217B6885030FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7475762C4B686A4E9BFBD29F /* Assets.xcassets */; };
 		7F05E8F944EB69EDF1A6B582 /* CategoryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3804EFDB57E501A0E918F /* CategoryFormView.swift */; };
+		866A65C4E63491F591147258 /* CardTemplateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D15733F5CAD91E7417BAFE /* CardTemplateSelectionView.swift */; };
 		8BCD6D36088CF840F65967D3 /* DefaultCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529D81A83FE32D0E07E8182 /* DefaultCategories.swift */; };
 		8D393565AACB2812541E5540 /* CategoryMultiplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E913E456CD48F37CA2F8E546 /* CategoryMultiplier.swift */; };
 		A0331A199C9BF379F41345FD /* SubcategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D525CE97EB4306F09F1288 /* SubcategoryView.swift */; };
@@ -36,10 +39,12 @@
 
 /* Begin PBXFileReference section */
 		047341FEFAC9166FB606698E /* CardFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFormView.swift; sourceTree = "<group>"; };
+		1586FC162434DD5FCB504D33 /* CardTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTemplates.swift; sourceTree = "<group>"; };
 		17D525CE97EB4306F09F1288 /* SubcategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoryView.swift; sourceTree = "<group>"; };
 		2042D6447D254A4E879B2A1E /* CardPeckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPeckerApp.swift; sourceTree = "<group>"; };
 		29C656A0811D64B92D8E2F72 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		352E4B6ACD98027B1668DC1A /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		35D15733F5CAD91E7417BAFE /* CardTemplateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTemplateSelectionView.swift; sourceTree = "<group>"; };
 		3F15ED8B3ABEBC8F184EE241 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4370AE63FD42554D135E9E51 /* CardManagementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManagementViewModel.swift; sourceTree = "<group>"; };
 		484986538CA6BB7DA1E3D6C0 /* SpendingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCategory.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		724F02C2379A3A1C9874BD39 /* CouponBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponBookView.swift; sourceTree = "<group>"; };
 		7475762C4B686A4E9BFBD29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767BD537157587F1320611AD /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		80D259DB4FB2871073A441EC /* BankSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankSelectionView.swift; sourceTree = "<group>"; };
 		814243BAB33A5BC5F2D66B6C /* CardPecker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CardPecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81797561BEAF4A5FE888519A /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
 		896E2C4BC5E6C30BE06B8D89 /* RewardsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsCalculator.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 		351942376059B750488A1038 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1586FC162434DD5FCB504D33 /* CardTemplates.swift */,
 				6529D81A83FE32D0E07E8182 /* DefaultCategories.swift */,
 				D918521DC6DB50511BD74303 /* LocalizationManager.swift */,
 				896E2C4BC5E6C30BE06B8D89 /* RewardsCalculator.swift */,
@@ -163,7 +170,9 @@
 		DA9FDE36A49A936A52CA3AA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				80D259DB4FB2871073A441EC /* BankSelectionView.swift */,
 				047341FEFAC9166FB606698E /* CardFormView.swift */,
+				35D15733F5CAD91E7417BAFE /* CardTemplateSelectionView.swift */,
 				66A3804EFDB57E501A0E918F /* CategoryFormView.swift */,
 				29C656A0811D64B92D8E2F72 /* CategoryGridView.swift */,
 				724F02C2379A3A1C9874BD39 /* CouponBookView.swift */,
@@ -249,11 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C676911DD3379242CCB31A9 /* BankSelectionView.swift in Sources */,
 				6EAC524FEA90560AFABDDA63 /* Card.swift in Sources */,
 				357E0FE332F29B2AB93C4787 /* CardFormView.swift in Sources */,
 				5D15505B41CAA75054C1ABD2 /* CardManagementViewModel.swift in Sources */,
 				B5FC14EEBD35FE4E0137955B /* CardPeckerApp.swift in Sources */,
 				FDA6A49505B19528662DCE77 /* CardRecommendationRow.swift in Sources */,
+				866A65C4E63491F591147258 /* CardTemplateSelectionView.swift in Sources */,
+				0FC4F469A388561F02372370 /* CardTemplates.swift in Sources */,
 				7F05E8F944EB69EDF1A6B582 /* CategoryFormView.swift in Sources */,
 				3FDE07976120C07D69159A09 /* CategoryGridView.swift in Sources */,
 				8D393565AACB2812541E5540 /* CategoryMultiplier.swift in Sources */,

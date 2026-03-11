@@ -6,6 +6,7 @@ struct CardFormView: View {
     @Environment(\.dismiss) private var dismiss
 
     let card: Card?
+    var template: CardTemplate? = nil
 
     @State private var name: String = ""
     @State private var rewardsCurrency: String = ""
@@ -110,17 +111,37 @@ struct CardFormView: View {
     }
 
     private func loadCardData() {
-        guard let card else { return }
-        name = card.name
-        rewardsCurrency = card.rewardsCurrency
-        pointValueCents = String(card.pointValueCents)
-        if let hex = card.cardColorHex {
-            cardColorHex = hex
-            selectedColor = Color(hex: hex)
+        if let card {
+            name = card.name
+            rewardsCurrency = card.rewardsCurrency
+            pointValueCents = String(card.pointValueCents)
+            if let hex = card.cardColorHex {
+                cardColorHex = hex
+                selectedColor = Color(hex: hex)
+                useCustomColor = true
+            }
+            for cm in card.categoryMultipliers {
+                multipliers[cm.categoryId] = String(cm.multiplier)
+            }
+        } else if let template {
+            name = template.name
+            rewardsCurrency = template.currency
+            pointValueCents = String(template.pointValue)
+            selectedColor = Color(hex: template.colorHex)
             useCustomColor = true
-        }
-        for cm in card.categoryMultipliers {
-            multipliers[cm.categoryId] = String(cm.multiplier)
+            // Map template multiplier category names to category IDs
+            for (categoryName, multiplier) in template.multipliers {
+                if let cat = allCategories.first(where: { $0.name == categoryName }) {
+                    multipliers[cat.id] = String(multiplier)
+                    // Also apply to subcategories
+                    let parentId = cat.id
+                    for sub in allCategories.filter({ $0.parentCategoryId == parentId }) {
+                        if multipliers[sub.id] == nil {
+                            multipliers[sub.id] = String(multiplier)
+                        }
+                    }
+                }
+            }
         }
     }
 

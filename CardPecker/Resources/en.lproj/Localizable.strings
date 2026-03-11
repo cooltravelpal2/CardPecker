@@ -66,6 +66,13 @@
 /* Coupon Book */
 "coupon.comingSoon" = "Track your card coupon usage. Coming soon!";
 
+/* Add Card Flow */
+"addCard.chooseBank" = "Choose Bank";
+"addCard.selectBank" = "Popular Banks";
+"addCard.selectCard" = "Cards";
+"addCard.customCard" = "Custom Card";
+"addCard.searchBanks" = "Search banks";
+
 /* Default Categories */
 "category.hotel" = "Hotel";
 "category.dining" = "Dining";
